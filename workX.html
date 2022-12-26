@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image:url("assets/img/Management.jpg");
+  background-color: #ffffff;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.right {
+  right: 0;
+  background-image: url("assets/img/Code.jpg");
+  background-color: #ffffff;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: inline ;
+  
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: auto;
+  height: 100%;
+}
+
+#nontech #popup {
+      display: none;
+    }
+    #nontech:hover #popup {
+      display: block;
+    }
+
+#tech #popup1 {
+      display: none;
+    }
+    #tech:hover #popup1 {
+      display: block;
+    }
+
+
+
+
+</style>
+</head>
+<body>
+<div id="nontech">
+  <div class="split left">
+    <div class="centered">
+    <!--  <img src="img_avatar2.png" alt="Avatar woman">  -->
+      <h2>Non-technical Experience</h2>
+      <p>Client escalations and Handling</p>
+      <div id="popup">
+        <img src="/assets/img/NT.png" alt="Non-technical">
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+<div id="tech">
+  <div class="split right">
+    <div class="centered">
+    <!-- <img src="img_avatar.png" alt="Avatar man"> -->
+      <h2>Technical Experience</h2> 
+      <p>Software Development and Cyber security </p>
+      <div id="popup1">
+        <img src="/assets/img/T.png" alt="Technical">
+      </div>
+    </div>
+  </div>
+</div>
+     
+</body>
+</html> 
